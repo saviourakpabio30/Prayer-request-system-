@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prayer Request System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- WELCOME SECTION -->
+<div class="welcome">
+
+   <div class="church-logo">
+    <img src="logo.png" alt="Church Logo">
+</div>
+
+    <h2>THE REDEEM CHRISTIAN CHURCH OF GOD</h2>
+
+    <p>
+        A place of faith, hope and prayer
+    </p>
+
+    <div class="verse">
+        "Call to me and I will answer you."
+    </div>
+
+    <span>— Jeremiah 33:3</span>
+
+</div>
+
+
+        <!-- PRAYER FORM -->
+        <div class="prayer-box">
+
+
+
+            <h1>Prayer Request</h1>
+
+            <p class="description">
+                Share your prayer request with us.
+                We are here to pray with you.
+            </p>
+
+
+            <form id="prayerForm">
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+<div class="anonymous-option">
+
+    <label class="checkbox-label">
+
+        <input
+            type="checkbox"
+            id="anonymous"
+        >
+
+        Submit this prayer request anonymously
+
+    </label>
+
+</div>
+
+
+                <label for="request">
+                    Prayer Request
+                </label>
+
+                <textarea
+                    id="request"
+                    rows="7"
+                    placeholder="Write your prayer request here..."
+                    required
+                ></textarea>
+
+
+                <button type="submit">
+                    Submit Prayer Request
+                </button>
+
+            </form>
+
+
+            <div id="successMessage"></div>
+
+        </div>
+
+
+        <!-- ADMIN LINK -->
+        <div class="admin-link">
+
+            <a href="admin.html">
+                Admin Login
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

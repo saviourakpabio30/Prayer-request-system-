@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         ADMIN LOGIN
+    ========================== -->
+
+    <div
+        class="login-container"
+        id="loginPage"
+    >
+
+        <div class="login-box">
+
+            <div class="admin-icon">
+<div class="church-logo">
+    <img src="logo.png" alt="Church Logo">
+</div>
+
+                
+            </div>
+
+            <h1>Admin Login</h1>
+
+            <p>
+                Login to view prayer requests
+            </p>
+
+
+            <label for="adminUsername">
+                Username
+            </label>
+
+            <input
+                type="text"
+                id="adminUsername"
+                placeholder="Enter username"
+            >
+
+
+            <label for="adminPassword">
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="adminPassword"
+                placeholder="Enter password"
+            >
+
+
+            <button onclick="adminLogin()">
+                Login
+            </button>
+
+
+            <div id="loginError"></div>
+
+
+            <a
+                href="index.html"
+                class="back-link"
+            >
+                ← Back to Prayer Request
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         ADMIN DASHBOARD
+    ========================== -->
+
+    <div
+        class="dashboard"
+        id="dashboard"
+        style="display: none;"
+    >
+
+
+        <!-- HEADER -->
+
+        <div class="dashboard-header">
+
+            <div>
+
+                <span class="dashboard-label">
+                    ADMIN PANEL
+                </span>
+
+                <h1>
+                    Prayer Requests
+                </h1>
+
+            </div>
+
+
+            <button
+                class="logout-button"
+                onclick="logout()"
+            >
+                Logout
+            </button>
+
+        </div>
+
+
+        <!-- STATISTICS -->
+
+        <div class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🙏
+                </div>
+
+                <div>
+
+                    <span>
+                        Total Requests
+                    </span>
+
+                    <strong id="totalRequests">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📅
+                </div>
+
+                <div>
+
+                    <span>
+                        Latest Requests
+                    </span>
+
+                    <strong id="latestRequests">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- REQUESTS -->
+
+        <div class="requests-section">
+
+            <div class="section-title">
+
+                <div>
+
+                    <h2>
+                        Submitted Requests
+                    </h2>
+
+                    <p>
+                        View prayer requests submitted by members.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div id="requestsContainer"></div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
