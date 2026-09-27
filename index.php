@@ -139,7 +139,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <p>
 
-            <a href="admin/login.php">
+            <a href="admin.html">
                 Administrator Login
             </a>
 
